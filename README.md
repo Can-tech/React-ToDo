@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+#React TODO Homework patika.dev
+[1](https://user-images.githubusercontent.com/61757250/186375322-5ce954b5-d191-4699-a7af-d6e7ddb6c25c.PNG)
+
+
+
+# Getting Started with Create React App!
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
