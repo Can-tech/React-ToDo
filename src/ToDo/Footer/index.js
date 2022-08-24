@@ -1,7 +1,8 @@
+import { Renderer } from 'leaflet'
 import PropTypes from 'prop-types'
 import {toDoLeft} from '../Main/index'
 
-function Footer({filter, setFilter}) {
+function Footer({filter, setFilter, list, setList}) {
   return (
     <div>
         <footer className="footer">
@@ -21,10 +22,17 @@ function Footer({filter, setFilter}) {
 				<a href="#/" className={filter==='Completed'? 'selected' : ''} onClick={()=>setFilter('Completed')}>Completed</a>
 			</li>
 		</ul>
-
-		<button className="clear-completed">
-			Clear completed
-		</button>
+		{list.some((e)=>e.isChecked===true)	
+				? <button className="clear-completed" onClick={()=>setList( list.filter((e)=>e.isChecked===false))}>
+					Clear completed
+				  </button>
+				: ''
+			
+				
+		}
+				
+			
+		
 	</footer>
 
     </div>

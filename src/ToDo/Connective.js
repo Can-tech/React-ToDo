@@ -13,7 +13,7 @@ function Connective() {
         
         <Header list={list} setList={setList}/>
         <Main list={list} setList={setList} filter={filter}/>        
-        <Footer filter={filter} setFilter={setFilter}/>
+        <Footer filter={filter} setFilter={setFilter} list={list} setList={setList}/>
         
 
     </div>
