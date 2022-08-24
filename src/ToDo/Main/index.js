@@ -93,7 +93,7 @@ if(filter==='All'){
                                 <input className="toggle" type="checkbox" checked={e.isChecked} onChange={()=>setList([...list], e.isChecked = !e.isChecked)}/>
                                 <label>{e.data}</label>
                                 <button className="destroy" style={{border: '3px solid'}} onClick={()=>{return setList(()=>[...list], list.splice(list.findIndex(object=>object.id===e.id),1))}}></button>
-                                {/* yukarısı oldukça karışık onClick ile listeden silme işleminde liste filitreli olunca soun oluyor. Yapılan çözüm her gönderiye birer özel id atamak ve özel id üzerinden eşleşen veriyi silmek oldu. Bir başka kolay çzöüm olarak filitrerli sayfalardaki silme butonu hepten kadlırılarak o sayfalarda silme işlemi yapması engellenebilir böyle yine bir soun çıkmazdı silme işlemi yapmak isteyen 'all' sayfasından yapbilirdi. */}
+                                {/* yukarısı oldukça karışık onClick ile listeden silme işleminde liste filitreli olunca sorun oluyor. Yapılan çözüm her gönderiye birer özel id atamak ve özel id üzerinden eşleşen veriyi silmek oldu. Bir başka kolay çözüm olarak filitrerli sayfalardaki silme butonu hepten kadlırılarak o sayfalarda silme işlemi yapması engellenebilir böylece yine bir sorun çıkmazdı silme işlemi yapmak isteyen 'all' sayfasından yapbilirdi. */}
                             </div>
                         </li>
                     )

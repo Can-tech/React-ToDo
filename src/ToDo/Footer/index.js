@@ -22,11 +22,11 @@ function Footer({filter, setFilter, list, setList}) {
 				<a href="#/" className={filter==='Completed'? 'selected' : ''} onClick={()=>setFilter('Completed')}>Completed</a>
 			</li>
 		</ul>
-		{list.some((e)=>e.isChecked===true)	
-				? <button className="clear-completed" onClick={()=>setList( list.filter((e)=>e.isChecked===false))}>
+		{list.some((e)=>e.isChecked===true) && filter!=='Active'	
+				? <button className="clear-completed" onClick={()=>{if(window.confirm('Are you sure?')) return setList( list.filter((e)=>e.isChecked===false))}}>
 					Clear completed
 				  </button>
-				: ''
+				: false
 			
 				
 		}
