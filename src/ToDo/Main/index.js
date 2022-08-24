@@ -32,7 +32,7 @@ if(filter==='All'){
                             <input className="toggle" type="checkbox" checked={e.isChecked} onChange={()=>setList([...list], e.isChecked = !e.isChecked)}/>
                             <label>{e.data}</label>
                             <button className="destroy" style={{border: '3px solid'}} onClick={()=>{return setList(()=>[...list], list.splice(list.findIndex(object=>object.id===e.id),1))}}></button>
-                            {list[i].id}-{list.findIndex(object=>object.id===e.id)}
+                            
                             
                         </div>
                     </li>
