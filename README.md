@@ -1,4 +1,4 @@
-#React TODO Homework patika.dev
+### React TODO Homework patika.dev
 
 ![1](https://user-images.githubusercontent.com/61757250/186375718-a5f0928d-8760-4a92-b7c2-be8ffd983d3c.PNG)
 
